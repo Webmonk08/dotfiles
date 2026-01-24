@@ -1,0 +1,67 @@
+[window]
+w = 950
+h = 1033
+toolbar = True
+statusbar = True
+thumbpane = True
+
+[prefs]
+simple-bgcolor = False
+bgcolor-red = 0
+bgcolor-green = 0
+bgcolor-blue = 0
+open_all = True
+hidden = False
+use_last_dir = True
+last_dir = /home/nikesh
+fixed_dir = /home/nikesh
+open_mode = 0
+last_mode = 2
+listwrap_mode = 0
+slideshow_delay = 1
+slideshow_random = False
+zoomquality = 2
+quality_save = 90
+disable_screensaver = False
+slideshow_in_fullscreen = False
+confirm_delete = True
+preloading_images = True
+savemode = 2
+start_in_fullscreen = False
+thumbsize = 128
+screenshot_delay = 2
+
+[actions]
+num_actions = 4
+names[0] = Open in GIMP
+commands[0] = gimp %F &
+shortcuts[0] = <Control>e
+batch[0] = False
+names[1] = Create Thumbnail
+commands[1] = convert %F -thumbnail 150x150 %Pt_%N.jpg
+shortcuts[1] = <Alt>t
+batch[1] = False
+names[2] = Create Thumbnails
+commands[2] = convert %F -thumbnail 150x150 %Pt_%N.jpg
+shortcuts[2] = <Control><Alt>t
+batch[2] = True
+names[3] = Move to Favorites
+commands[3] = mkdir -p ~/mirage-favs; mv %F ~/mirage-favs; [NEXT]
+shortcuts[3] = <Control><Alt>f
+batch[3] = False
+
+[recent]
+num_recent = 6
+num[0] = 79
+urls[0,0] = /home/nikesh/Pictures/Screenshots/WhatsApp Image 2026-01-06 at 12.49.55 PM.jpeg
+num[1] = 85
+urls[1,0] = /home/nikesh/Downloads/Miles Morales _ Gwen _ Across the Spiderverse _ Spider-Man.jpg
+num[2] = 31
+urls[2,0] = /home/nikesh/Downloads/wall.jpg
+num[3] = 67
+urls[3,0] = /home/nikesh/Downloads/WhatsApp Image 2025-12-09 at 8.29.11 AM.jpeg
+num[4] = 67
+urls[4,0] = /home/nikesh/Downloads/WhatsApp Image 2025-10-07 at 1.18.56 PM.jpeg
+num[5] = 39
+urls[5,0] = /home/nikesh/Downloads/Miles & Gwen.jpg
+
